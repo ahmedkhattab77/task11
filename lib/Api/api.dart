@@ -9,7 +9,7 @@ class Api {
     late List<Item> itemList;
     try {
       final url = Uri.parse(
-          '$baseUrl/search/repositories?q=created:%3E2023-04-10&sort=stars&order=desc&per_page=$i&page=1');
+          '$baseUrl/search/repositories?q=created:%3E2023-04-10&sort=stars&order=desc&per_page=10&page=$i');
       http.Response responce = await http.get(url);
       if (responce.statusCode == 200) {
         var jsonData = jsonDecode(responce.body);

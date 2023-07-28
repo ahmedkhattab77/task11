@@ -17,24 +17,26 @@ class ConstCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 150,
+      width: double.infinity,
       color: Colors.white,
       child: Row(
         children: [
           const Column(
             children: [
-              Text('id'),
+              Text('id :'),
               SizedBox(
                 height: 5,
               ),
-              Text('name'),
+              Text('name :'),
               SizedBox(
                 height: 5,
               ),
-              Text('fullname'),
+              Text('full name :'),
               SizedBox(
                 height: 5,
               ),
-              Text('privet'),
+              Text('privet :'),
               SizedBox(
                 height: 5,
               ),
